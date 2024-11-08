@@ -1,0 +1,459 @@
+
+.header-content{
+    background-color: rgb(21, 185, 203) !important;
+    color: white;
+    height: 80px;
+}
+
+nav a{
+    font-size: 19px !important;
+    color: white !important;
+    padding-right: 10px;
+}
+nav li a:hover{
+    color: rgb(209, 144, 23) !important;
+
+}
+nav h3{
+    font-size: 25px;
+    font-weight: 250;
+    font-style: italic;
+}
+.bi-cart{
+    font-size: 25px !important;
+}
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.anh{
+    margin-top: 20px;
+    height: 400px;
+   
+}
+.anh img{
+    object-fit: cover !important;
+}   
+.hangSanXuat li {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.hangSanXuat li:hover {
+    background-color: #36aabc;
+}
+
+.hangSanXuat img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto; /* Căn giữa hình ảnh */
+}
+
+
+
+.modal-dialog{
+    border-bottom: none !important  ;
+  
+}
+footer{
+    margin-top: 50px;
+    background-color: #242239;
+    color: white;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #2f21d2;
+        color: white;
+        padding: 20px 0;
+    
+}
+footer a{
+   text-decoration: none;
+   font-style: italic;
+    color: white;
+}
+ li .active {
+    color: rgb(209, 144, 23) !important; /* Thay đổi màu của mục active ở đây */
+    font-weight: bold; /* Tuỳ chỉnh kiểu chữ, nếu muốn */
+    /* Thêm các thuộc tính CSS khác nếu cần */
+}
+.active {
+    color: rgb(209, 144, 23) !important; /* Thay đổi màu của mục active ở đây */
+    font-weight: bold; /* Tuỳ chỉnh kiểu chữ, nếu muốn */
+    /* Thêm các thuộc tính CSS khác nếu cần */
+}
+.dangKy-dangNhap a{
+    text-decoration: none;
+}
+.dangKy-dangNhap a:hover{
+    color: rgb(209, 144, 23) !important;
+}
+.navbar-toggler{
+    background-color: rgb(209, 144, 23) !important; 
+}
+.sanPhamDaXem{
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: rgb(21, 185, 203);
+    width: 158px;
+    height: 42px;
+}
+.taiKhoan-gioHang i:hover{
+    color: rgb(234, 234, 36) !important;
+
+}
+.menu li{
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+.menu a{
+   display: flex;
+   align-items: center !important;
+   background-size: 28px 28px;
+   padding-left: 33px !important;
+}
+
+   
+
+.header-menu{
+    background-color:#c5bebea7;
+    padding-bottom: 2px;
+}
+.khungSanPham{
+    background-color: rgb(21, 185, 203);
+    padding: 25px;
+    border-radius: 15px;
+}
+.heading{
+    margin: 5px 0 15px 0;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #88ff00;
+    border-radius: 10px;
+    background-color:#3dc7ed;
+    height: 35px;
+    text-align: center;
+}
+.khungAnh{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 218px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+
+}
+.khungAnh a img
+{
+ width: 100%;
+ height: 200px;
+
+}
+.title{
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    line-height: 1.4em;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: center;
+  
+}
+.price{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin: 10px;
+    color: #e53935;
+    font-weight: bold;
+    text-align: center;
+}
+.cotSanPham{
+    padding: 0px;
+   background-color: white;
+   border-radius: 15px;
+}
+.lienHe h1{
+    font-size: 22px;
+    font-weight: 600;
+    color: #b91409;
+    margin: 5px 0 15px 0;
+}
+.lienHe{
+    background-color: rgb(217, 217, 217);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.rowFootter{
+    margin-top: 10px !important;
+}
+.col-md-4{
+    margin-top: 20px;
+}
+.price_sale{
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #a9a9a9;
+}
+.khungAnh-content a{
+    text-decoration: none;
+    color: black;
+}
+.khungAnh a:hover{
+    transform: scale(1.1); /* Kích thước ảnh tăng lên 110% khi hover */
+    transition: transform 0.8s ease; 
+}
+.themvaogiohang {
+    display: none;
+    padding: 8px 10px;
+    background: #f6fe13;
+    color: #FFF;
+    margin-bottom: 0;
+    line-height: 1.4;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    min-height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    text-decoration: none; /* Thêm dòng này để loại bỏ gạch chân mặc định */
+}
+
+.khungAnh:hover .themvaogiohang {
+
+    display: block;
+}
+
+.themvaogiohang:hover {
+    background: #8ba300; /* Đổi màu nền khi hover */
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 170px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+  
+}
+.dropdown-content a:hover {
+   color: red;
+  
+}
+/* Hiển thị dropdown content khi hover vào taiKhoan-gioHang */
+.taiKhoan-gioHang:hover .dropdown-content {
+    display: block;
+}
+.product-details-container img{
+width: 100%;
+height: 100%;
+border: 1px solid;
+border-radius: 15px;
+}
+.product-details-container img:hover{
+  
+    transform: scale(1.1); /* Kích thước ảnh tăng lên 110% khi hover */
+    transition: transform 0.8s ease; 
+    }
+.product-details-container strong{
+    color: #008000;
+}
+.for-mobile{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.for-mobile h4{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #459b43;
+    margin: 0;
+    padding: 10px;
+}
+.for-mobile li{
+display: flex;
+align-items: center;
+padding-bottom: 5px;
+border-bottom: 1px solid #ececec;
+
+}
+.for-mobile p{
+ margin-left: 15px;
+ margin-bottom: 0;
+ font-size: 14px;
+ line-height: 1.2;
+ color: black;
+ }
+ .for-mobile img{
+    padding: 3px;
+    width: 35px;
+    max-width: 35px;
+    height: auto;
+ }
+ .button{
+    text-transform: uppercase;
+    padding: 10px 30px;
+    min-width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #ed1b24;
+    line-height: normal;
+    color: white;
+ }
+ .btn:hover{
+    background: #ed1b24;
+    color: white;
+ }
+/* Ẩn danh sách sản phẩm mặc định */
+/* Ẩn danh sách sản phẩm mặc định */
+.cart-items-container {
+    display: none; /* Ẩn phần tử khi trang web được tải lên */
+
+
+    right: 0;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    z-index: 1000; /* Đảm bảo phần tử này hiển thị trên các phần tử khác */
+}
+
+
+/* Hiển thị danh sách sản phẩm khi hover vào biểu tượng giỏ hàng */
+
+.temp1{
+    background: linear-gradient(to right, #ef3006, #c60004);
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0;
+    overflow: hidden;
+    max-width: 100%;
+    padding-right: 8px;
+    margin: 0px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    
+}
+.temp1 img{
+    float: left;
+    max-width: 20px;
+}
+.temp1 span{
+    color: #fff;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 10px;
+    line-height: 13px;
+    margin-left: 3px;
+    overflow: hidden;
+    padding: 4px 0 0 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-line-clamp: 2;
+    text-transform: uppercase;
+}
+
+/* Định dạng cho menu dropdown */
+.dropdown {
+    position: relative; /* Vị trí tương đối để chứa nội dung dropdown */
+}
+
+/* Định dạng nội dung dropdown */
+.dropdown-content_menu {
+    display: none; /* Ẩn nội dung dropdown */
+    position: absolute; /* Vị trí tuyệt đối */
+    background-color: #f9f9f9; /* Màu nền của dropdown */
+    min-width: 160px; /* Chiều rộng tối thiểu */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Đổ bóng */
+    z-index: 1; /* Đặt trên các phần tử khác */
+}
+
+/* Định dạng các liên kết trong dropdown */
+.dropdown-content_menu a {
+    color: black; /* Màu chữ của liên kết */
+    padding: 12px 16px; /* Khoảng cách bên trong liên kết */
+    text-decoration: none; /* Không có gạch chân */
+    display: block; /* Hiển thị dưới dạng khối */
+}
+
+/* Hiển thị nội dung dropdown khi hover */
+.dropdown:hover .dropdown-content_menu {
+    display: block; /* Hiển thị nội dung khi hover */
+}
+
+/* Định dạng hiệu ứng khi hover trên liên kết */
+.dropdown-content_menu a:hover {
+    background-color: #f1f1f1; /* Màu nền khi hover */
+}
+
+.gioithieuthanhvien{
+    background-color: aqua;
+}
+.gioithieuthanhvien .nd{
+    padding-top: 100px;
+} 
+.gioithieuthanhvien .nd h5{
+    margin-top: 20px;
+}
+
+.nav-link.dropdown-toggle::after {
+    display: none; /* Ẩn mũi tên */
+}
+.dropdown-content_menu a:hover {
+    color: red;
+}
+
+.lyDoMuaHang h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+.lyDoMuaHang h5 {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.lyDoMuaHang img {
+    margin-bottom: 10px;
+}
+
+.lyDoMuaHang p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 50px;
+}
+h5{
+    text-align: center;
+    margin-bottom: 20px;
+}

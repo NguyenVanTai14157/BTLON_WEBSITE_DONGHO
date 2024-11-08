@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức - Đồng Hồ Đẹp</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".read-more-btn").click(function () {
+                $(this).siblings(".card-text").toggleClass("show");
+                $(this).text(function (i, text) {
+                    return text === "Đọc Thêm" ? "Thu gọn" : "Đọc Thêm";
+                });
+            });
+        });
+    </script>
+    <style>
+        .card-text {
+            overflow: hidden;
+            max-height: 50px;
+            transition: max-height 0.3s ease;
+        }
+
+        .card-text.show {
+            max-height: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-light">
+        <div class="fixed">
+            <div class="container-fluid header-content">
+                <div class="container">
+                    <div style="height: 80px;" class="row d-flex align-items-center justify-content-center">
+                        <div class="col-2">
+                            <h3 style="color: white; font-style: italic;">Đồng Hồ Đẹp</h3>
+                        </div>
+                        <div class="col-4">
+                            <form action="" class="d-flex">
+                                <input placeholder="Tìm kiếm sản phẩm" class="form-control me-2 " type="text">
+                                <button style="width: 55px; height: 40px;" class="btn btn-warning ">
+                                    <img src="../img/icon/btsearch.png" alt="">
+                                </button>
+                            </form>
+
+                        </div>
+                        <div class="col-2">
+                            <div class="navbar navbar-expand">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle text-white me-3" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+                                        <div class="dropdown-content_menu " style="width: 200px;">
+                                            <a href="../html/giacaonhat.html">Giá cao nhất</a>
+                                            <a href="../html/giathapnhat.html">Giá thấp nhất</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle text-white" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hỗ trợ</a>
+                                        <div class="dropdown-content_menu" style="width: 210px;">
+                                            <a href="../html/chinhsachdoitra.html">Chính sách đổi trả</a>
+                                            <a href="../html/chiasekienthuc.html">Chia sẻ kiến thức</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span>Hotline : </span>
+                                <span>1800 6785</span>
+                            </div>
+                            <div class="taiKhoan-gioHang">
+                                <a href="#"><i style="font-size: 30px !important; color: white;" class="bi bi-person"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="../html/dangnhap.html">Đăng nhập</a><br><br>
+                                    <a href="../html/dangky.html">Đăng ký</a>
+                                </div>
+                            </div>
+                            <div class="taiKhoan-gioHang">
+                                <a href="../html/thanhtoan.html" id="cart-icon" onmouseover="showCartItems()">
+                                    <i style="font-size: 30px !important; color: white;" class="bi bi-cart"></i>
+                                    <span style="color: black;" id="cart-item-count" class="badge bg-warning rounded-circle">0</span>
+                                </a>
+                                <div id="cart-items-container" class="cart-items-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height: 50px;" class="container-fluid header-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2 p-0">
+                            <a style="text-decoration: none; color: black; width: 200px;" href="index.html"
+                                class="d-flex align-items-center active">
+                                <div style="height: 50px; width: 70px;">
+                                    <img src="../img/LOGO/logo4.png" style="border: 1px solid; border-radius: 50%;" alt="" width="100%" height="100%">
+                                </div>
+                                <span style="margin-left: 4px;">Đồng Hồ Đẹp</span>
+                            </a>
+                        </div>
+                        <div class="col-10 p-0">
+                            <div class="navbar navbar-expand">
+                                <ul class="navbar-nav menu">
+                                    <li class="nav-item"><a href="../html/gioithieu.html" class="nav-link me-4">Giới thiệu</a></li>
+                                    <li class="nav-item"><a href="../html/tintuc.html" class="nav-link me-4">Tin tức</a></li>
+                                    <li class="nav-item"><a href="../html/khuyenmai.html" class="nav-link me-4">Khuyến mãi hot</a></li>
+                                    <li class="nav-item"><a href="../html/lienhe.html" class="nav-link me-4">Liên hệ</a></li>
+                                    <li class="nav-item"><a href="../html/sitemap.html" class="nav-link me-4">Site Map</a></li>
+                                    <li class="nav-item"><a href="../html/gioithieuthanhvien.html" class="nav-link">Giới thiệu thành viên</a></li>
+                                    <li class="nav-item"><a href="../html/danhsachsanpham.html" class="nav-link">Danh sách sản phẩm</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Tin Tức</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="../img/tintuc/candino-thang-10-900_1729832777.webp" class="card-img-top" alt="Tin Tức Giảm Giá">
+                    <div class="card-body">
+                        <h5 class="card-title">Khuyến Mãi Đặc Biệt: Giảm Giá 15% Trên Tất Cả Các Mẫu Đồng Hồ!</h5>
+                        <p class="card-text">
+                            Chào mừng bạn đến với chương trình khuyến mãi đặc biệt dành cho tất cả những tín đồ yêu thích đồng hồ! 
+                            Chúng tôi xin thông báo rằng từ ngày hôm nay, bạn có thể nhận được <strong>giảm giá 15%</strong> cho tất cả các mẫu đồng hồ có trong bộ sưu tập của chúng tôi.
+                            Đây là cơ hội tuyệt vời để bạn sở hữu những chiếc đồng hồ chất lượng cao với mức giá cực kỳ hấp dẫn. 
+                            Đừng bỏ lỡ cơ hội này để nâng cấp phong cách của mình hoặc tìm món quà ý nghĩa cho người thân.
+                        </p>
+                        <button class="btn btn-primary read-more-btn">Đọc Thêm</button>
+                        <div class="card-text">
+                            <ul>
+                                <li>Loại đồng hồ</li>
+                                <li>Phong cách thiết kế</li>
+                                <li>Chất liệu</li>
+                                <li>Tính năng</li>
+                                <li>Thương hiệu</li>
+                                <li>Giá cả</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="../img/tintuc/uu-dai-toi-25-dong-ho-rado-chat-lieu-ben-bi-thiet-ke-tinh-xao_1728616236.webp" class="card-img-top" alt="Tin Tức Giảm Giá">
+                    <div class="card-body">
+                        <h5 class="card-title">Siêu Khuyến Mãi: Giảm Giá 25% Tất Cả Các Mẫu Đồng Hồ!</h5>
+                        <p class="card-text">
+                            Cơ hội tuyệt vời không thể bỏ lỡ! Từ hôm nay, hãy tham gia chương trình khuyến mãi giảm giá <strong>25%</strong> trên tất cả các mẫu đồng hồ tại cửa hàng của chúng tôi. 
+                            Với những mẫu mã đa dạng từ cổ điển đến hiện đại, bạn sẽ dễ dàng tìm thấy chiếc đồng hồ hoàn hảo để tôn lên phong cách của mình hoặc làm quà tặng ý nghĩa cho người thân.
+                            Đừng chần chừ, khuyến mãi chỉ kéo dài trong thời gian có hạn!
+                        </p>
+                        <button class="btn btn-primary read-more-btn">Đọc Thêm</button>
+                        <div class="card-text">
+                            <ul>
+                                <li>Thiết kế tinh tế</li>
+                                <li>Chất liệu cao cấp</li>
+                                <li>Chế độ bảo hành hấp dẫn</li>
+                                <li>Tính năng đa dạng</li>
+                                <li>Phù hợp với mọi lứa tuổi</li>
+                                <li>Cơ hội sở hữu đồng hồ chất lượng với giá tốt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <footer>
+        <div style="text-align: center;" class="container mt-5">
+            <div class="row">
+                <div class="col-md-4 ml-3">
+                    <h4>50, Nguyễn Văn Bảo, Gò Vấp, TPHCM</h4>
+                    <p>Đại Học Công Nghiệp</p>
+                    <p>Số điện thoại: 087.868.2424</p>
+                    <p>Email: twatch@gmail.com</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h4>Hỗ trợ khách hàng</h4>
+                    <p class="text-center">Chính sách đổi trả hàng online</a></li>
+                    <p>Chính sách khách hàng thân thiết</a></li>
+                    <p>Giao hàng & phí giao hàng</a></li>
+                    <p>Hướng dẫn chọn size</a></li>                    
+                </div>
+                <div class="col-4 text-center ps-5 pt-3">
+                    <h4 class="text-start">Theo dõi chúng tôi</h4>
+                    <ul class="nav">
+                        <li class="text-center me-3"><img src="../img/footer/theodoi1.webp" alt=""></li>
+                        <li><img src="../img/footer/theodoi2.webp" alt=""></li>
+                    </ul>
+                    <h4 class="text-start">Phương thức thanh toán</h4>
+                    <ul class="nav">
+                        <li class="me-3"><img src="../img/footer/thanhtoan1.webp" alt=""></li>
+                        <li class="me-3"><img src="../img/footer/thanhtoan2.webp" alt=""></li>
+                        <li><img src="../img/footer/thanhtoan3.webp" alt=""></li>
+                    </ul>
+                    <h4 class="text-start">Phương thức vận chuyển</h4>
+                    <ul class="nav">
+                        <li class="me-3"><img src="../img/footer/vanchuyen1.webp" alt=""></li>
+                        <li class="me-3"><img src="../img/footer/vanchuyen2.webp" alt=""></li>
+                        <li><img src="../img/footer/vanchuyen3.webp" alt=""></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>© 2024 Đồng Hồ - Tất cả các quyền được bảo lưu</p>
+            <p>Hãy để chúng tôi giúp bạn tìm chiếc đồng hồ phù hợp, khẳng định phong cách của bạn!</p>
+        </div>
+    </footer>
+</body>
+
+</html>
